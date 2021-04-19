@@ -8,11 +8,15 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="1.网络配置（centos7和6有区别，一定要按basic server）桥接：真实网卡（需要占用网段的一个ip，在实验室可能造成冲突） NAT：假网卡 host-only：只能和主机通信vmnet1 2.代码配置（c6:ifconfig )c7:ip addr——————————–(上面是查看)————————————- c6:ifconfig eth0 xxx.xxx.xxx c7配置:ifc">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2021/03/27/20210327_linux02/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.网络配置（centos7和6有区别，一定要按basic server）桥接：真实网卡（需要占用网段的一个ip，在实验室可能造成冲突） NAT：假网卡 host-only：只能和主机通信vmnet1 2.代码配置（c6:ifconfig )c7:ip addr——————————–(上面是查看)————————————- c6:ifconfig eth0 xxx.xxx.xxx c7配置:ifc">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-03-27T11:20:16.391Z">
+<meta property="article:modified_time" content="2021-03-27T14:38:18.615Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -150,403 +154,7 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-b站推荐" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>b站推荐</p>
-<p>jeesite（ssm)</p>
-<p>商城类项目</p>
-<p>秒杀类spring-boot-seckill</p>
-<p>支付类 roncoo-pay</p>
-<p>综合平台类 cloud-platform</p>
-<p>​                oprn-capacity-platform(spring cloud)</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/04/19/b%E7%AB%99%E6%8E%A8%E8%8D%90/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20210418" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="权限管理命令：chmod"><a href="#权限管理命令：chmod" class="headerlink" title="权限管理命令：chmod"></a>权限管理命令：chmod</h2><h3 id="名称：chmod"><a href="#名称：chmod" class="headerlink" title="名称：chmod"></a>名称：chmod</h3><p>change the permissions mode of a file</p>
-<p>路径：/bin/chmod</p>
-<p>语法：chmod [{ugoa}{+，-，=}{rwx}] [文件或目录]</p>
-<p>​                        –&gt;<!--这个多-->[mode=421] [文件或目录]</p>
-<p>​                            r ——4</p>
-<p>​                            w——2</p>
-<p>​                            x——-1</p>
-<p>​                        -R 递归修改(全改)</p>
-<p>功能描述：改变文件或目录权限（可以多个授权）</p>
-<h2 id="文件目录权限"><a href="#文件目录权限" class="headerlink" title="文件目录权限"></a>文件目录权限</h2><p>r        读权限                 可以查看文件内容        可以列出目录中的内容</p>
-<p>w         写权限            可以修改文件内容            可以在目录中创建、删除文件</p>
-<p>x         执行权限            可以执行文件                可以进入目录</p>
-<p>file              r:cat/more/head/tail/less</p>
-<p>​                    w:vim</p>
-<p>​                    x:script command</p>
-<p>directory        r:ls</p>
-<p>​                        w:touch/mkdir/rmdir/rm</p>
-<p>​                        x:cd</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/04/19/20210418/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20210406" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="链接命令"><a href="#链接命令" class="headerlink" title="链接命令"></a>链接命令</h2><h3 id="命令名称：ln（link）"><a href="#命令名称：ln（link）" class="headerlink" title="命令名称：ln（link）!!!!"></a>命令名称：ln（link）!!!!</h3><p>语法：ln -s[原文件] [目标文件]</p>
-<p>​            -s创建软链接</p>
-<p>功能描述：生成链接文件</p>
-<p>ln -s /etc/issue /tmp/issue.soft</p>
-<p>创建那件/etc/issue的软链接/tmp/issue.soft(快捷方式，方便 ，但是rwxrwxrwx小心)</p>
-<p>ln /etc/issue /tmp/issue.hard</p>
-<p>创建文件/etc/issue的硬链接/tmp/issue.hard</p>
-<h4 id="硬链接特征："><a href="#硬链接特征：" class="headerlink" title="硬链接特征："></a>硬链接特征：</h4><p>1.拷贝 cp -p 和同步更新的合体！</p>
-<p>echo “this is a test “ &gt;&gt; /etc/motd</p>
-<p>2.可通过i节点识别</p>
-<p>3.不能跨分区！！！！！！！！！！！！！（之前系统分区那块，三个）</p>
-<p>4.不能针对目录使用</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/04/06/20210406/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20210401_2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="！！大事-vm的桥接模式，一定注意ip的变换要不ssh连不上"><a href="#！！大事-vm的桥接模式，一定注意ip的变换要不ssh连不上" class="headerlink" title="！！大事  vm的桥接模式，一定注意ip的变换要不ssh连不上"></a>！！大事  vm的桥接模式，一定注意ip的变换要不ssh连不上</h1><h2 id="4-1-1命令格式与目录处理命令ls（-开头是隐藏文件：系统文件，无事不要动）"><a href="#4-1-1命令格式与目录处理命令ls（-开头是隐藏文件：系统文件，无事不要动）" class="headerlink" title="4.1.1命令格式与目录处理命令ls（.开头是隐藏文件：系统文件，无事不要动）"></a>4.1.1命令格式与目录处理命令ls（.开头是隐藏文件：系统文件，无事不要动）</h2><p>命令  [-选项] [参数] </p>
-<p>例： ls -la /etc</p>
-<p>-a = –all  查看包括的隐藏文件</p>
-<p>-l   –&gt; long(重点！！！！！！！！！)</p>
-<p>-h   人性化显示</p>
-<p>ls -ld /etc <u>只显示目录本身的信息</u></p>
-<p>-i identity身份</p>
-<p>—rw——-. 1                                         root        root            1272   3月  28 02:52 anaconda-ks.cfg</p>
-<p>​                 引用计数（硬链接，软）            所有者    所属组        大小   最后一次访问时间</p>
-<p>-(文件)–rw——-</p>
-<p>d 目录</p>
-<p>l  软链接</p>
-<p>rw- r– r–</p>
-<p>u   g   o</p>
-<p>u所有者  g所属组 o其他人</p>
-<p>r  w  x执行</p>
-<h2 id="4-1-2-目录处理命令"><a href="#4-1-2-目录处理命令" class="headerlink" title="4.1.2 目录处理命令"></a>4.1.2 目录处理命令</h2><p>命令名称：mkdir  （make directories）</p>
-<p>所在路径：/bin/mkdir</p>
-<p>执行权限：所有用户</p>
-<p>语法：mkdir -p [用户名]    在新目录下再创建新目录（原则只让创建一个）</p>
-<hr>
-<p>名称:cd （change directory）</p>
-<p>命令所在路径：shell内置命令</p>
-<hr>
-<p>pwd      （print working directory）</p>
-<p>所在路径： /bin/pwd</p>
-<hr>
-<p>命令名称:  rmdir  (remove empty directory)</p>
-<p>所在路径： /bin/rmdir       删除空目录</p>
-<hr>
-<p>命令名称：cp （copy）</p>
-<p>所在路径：/bin/cp</p>
-<p>语法: cp -rp [原文件或目录]   [目标目录]</p>
-<p>​               -r 复制目录（所有子目录和文件）</p>
-<p>​              -p保留文件属性    如保留修改时间（不操作就是原先创建时间）</p>
-<hr>
-<p>命令名称 ：rm (remove)</p>
-<p>路径：/bin/rm</p>
-<p>语法： rm -rf   [文件或目录]</p>
-<p>​                  -r    [删除目录]</p>
-<p>​                  -f     [强制执行]</p>
-<hr>
-<p>mv  cangjing   xiaocanglaoshi直接改名</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/04/01/20210401_2/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20210401_1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Linux各目录作用"><a href="#Linux各目录作用" class="headerlink" title="Linux各目录作用"></a>Linux各目录作用</h2><h3 id="bin"><a href="#bin" class="headerlink" title="/bin/"></a>/bin/</h3><p>存放系统命令</p>
-<p>单用户模式下也可执行</p>
-<h3 id="sbin"><a href="#sbin" class="headerlink" title="/sbin/"></a>/sbin/</h3><p>保存和系统环境设置相关的命令</p>
-<p>只有超级用户才可以用</p>
-<h3 id="usr-sbin"><a href="#usr-sbin" class="headerlink" title="/usr/sbin/"></a>/usr/sbin/</h3><p>普通用户和超级用户都可，单用户模式下不能执行</p>
-<h3 id="boot"><a href="#boot" class="headerlink" title="/boot"></a>/boot</h3><p>系统启动目录，如grub文件（别往里写别的）</p>
-<h3 id="dev"><a href="#dev" class="headerlink" title="/dev/"></a>/dev/</h3><p>设备文件保存位置</p>
-<h3 id="etc"><a href="#etc" class="headerlink" title="/etc/"></a>/etc/</h3><p>配置文件保存位置</p>
-<h3 id="home"><a href="#home" class="headerlink" title="/home/"></a>/home/</h3><p>普通用户的家目录（看课件）。。。如user1的家目录就是/home/user1</p>
-<h3 id="lib"><a href="#lib" class="headerlink" title="/lib"></a>/lib</h3><p>系统调用的函数库的保存位置</p>
-<h3 id="lost-found"><a href="#lost-found" class="headerlink" title="/lost+found/"></a>/lost+found/</h3><p>意外关机，崩溃在这儿找碎片修复，如/lost+found就是根分区的<u>备份恢复目录</u>,/boot/lost+found就是boot分区的备份恢复目录</p>
-<h3 id="media-mnt-misc"><a href="#media-mnt-misc" class="headerlink" title="/media       /mnt     /misc"></a>/media       /mnt     /misc</h3><p>挂载目录</p>
-<p>1.软盘，硬盘（挂载媒体设备）</p>
-<p>2.u盘，移动硬盘，和其他操作系统分区（挂载额外设备）</p>
-<p>3.挂载NFS服务的共享目录</p>
-<h3 id="opt"><a href="#opt" class="headerlink" title="/opt"></a>/opt</h3><p>第三方</p>
-<p>现在基本放在/usr/local</p>
-<h3 id="proc"><a href="#proc" class="headerlink" title="/proc"></a>/proc</h3><p>虚拟文件系统，在内存中       内核，进程，外部设备状态和网络状态灯</p>
-<h4 id="proc-cpuinfo"><a href="#proc-cpuinfo" class="headerlink" title="/proc/cpuinfo"></a>/proc/cpuinfo</h4><p>保存cpu信息</p>
-<h4 id="proc-net"><a href="#proc-net" class="headerlink" title="/proc/net"></a>/proc/net</h4><p>保存网络协议信息</p>
-<h3 id="sys"><a href="#sys" class="headerlink" title="/sys/"></a>/sys/</h3><p>和proc相似，保存内核相关信息的</p>
-<h3 id="root"><a href="#root" class="headerlink" title="/root"></a>/root</h3><p>超级用户的家目录。普通用户目录在/home下，超级用于家目录直接在/下</p>
-<h3 id="srv"><a href="#srv" class="headerlink" title="/srv"></a>/srv</h3><p>服务数据目录</p>
-<h3 id="tmp"><a href="#tmp" class="headerlink" title="/tmp"></a>/tmp</h3><h3 id="usr"><a href="#usr" class="headerlink" title="/usr"></a>/usr</h3><h3 id="var"><a href="#var" class="headerlink" title="/var"></a>/var</h3><p>动态数据保存位置</p>
-<h2 id="服务器注意事项"><a href="#服务器注意事项" class="headerlink" title="服务器注意事项"></a>服务器注意事项</h2><h3 id="不允许关机，只能重启"><a href="#不允许关机，只能重启" class="headerlink" title="不允许关机，只能重启"></a>不允许关机，只能重启</h3><h3 id="重启时应该关闭服务"><a href="#重启时应该关闭服务" class="headerlink" title="重启时应该关闭服务"></a>重启时应该关闭服务</h3><h3 id="不要在服务器访问高峰运行高负载命令"><a href="#不要在服务器访问高峰运行高负载命令" class="headerlink" title="不要在服务器访问高峰运行高负载命令"></a>不要在服务器访问高峰运行高负载命令</h3><h3 id="远程配置防火墙是不要吧自己踢出服务器"><a href="#远程配置防火墙是不要吧自己踢出服务器" class="headerlink" title="远程配置防火墙是不要吧自己踢出服务器"></a>远程配置防火墙是不要吧自己踢出服务器</h3><h3 id="指定合理的密码规范并定期更新"><a href="#指定合理的密码规范并定期更新" class="headerlink" title="指定合理的密码规范并定期更新"></a>指定合理的密码规范并定期更新</h3><h3 id="合理分配权限"><a href="#合理分配权限" class="headerlink" title="合理分配权限"></a>合理分配权限</h3><h3 id="定期备份重要数据和日志！！！！！！！！"><a href="#定期备份重要数据和日志！！！！！！！！" class="headerlink" title="定期备份重要数据和日志！！！！！！！！"></a>定期备份重要数据和日志！！！！！！！！</h3>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/04/01/20210401_1/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20210330" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Linux严格区分大小写-终端命令，注意！-tab补全"><a href="#Linux严格区分大小写-终端命令，注意！-tab补全" class="headerlink" title="Linux严格区分大小写(终端命令，注意！)tab补全"></a>Linux严格区分大小写(终端命令，注意！)tab补全</h2><h2 id="Linux中所有内容以文件形式保存，包括硬件"><a href="#Linux中所有内容以文件形式保存，包括硬件" class="headerlink" title="Linux中所有内容以文件形式保存，包括硬件"></a>Linux中所有内容以文件形式保存，包括硬件</h2><p>硬盘文件/dev/sd[a-p]</p>
-<p>光盘文件是/dev/sr0</p>
-<p>windows是以任务管理器管理硬件，linux以文件保存</p>
-<h2 id="。。Linux-不靠扩展名区分文件类型-给管理员看的，和windows的区别"><a href="#。。Linux-不靠扩展名区分文件类型-给管理员看的，和windows的区别" class="headerlink" title="。。Linux 不靠扩展名区分文件类型(给管理员看的，和windows的区别)"></a>。。Linux 不靠扩展名区分文件类型(给管理员看的，和windows的区别)</h2><p>压缩包： .gz  .bz2  .bz2 .tar.bz2 .tgz</p>
-<p>二进制软件包 rpm</p>
-<p>网页文件 .html .php</p>
-<p>脚本文件  .sh</p>
-<p>配置文件   .conf </p>
-<h2 id="。。Linux所有的存储设备都必须挂载之后用户才能使用，包括硬盘、U盘和光盘"><a href="#。。Linux所有的存储设备都必须挂载之后用户才能使用，包括硬盘、U盘和光盘" class="headerlink" title="。。Linux所有的存储设备都必须挂载之后用户才能使用，包括硬盘、U盘和光盘"></a>。。Linux所有的存储设备都必须挂载之后用户才能使用，包括硬盘、U盘和光盘</h2><h2 id="Windows下的程序不能直接在Linux中安装和运行"><a href="#Windows下的程序不能直接在Linux中安装和运行" class="headerlink" title="Windows下的程序不能直接在Linux中安装和运行"></a>Windows下的程序不能直接在Linux中安装和运行</h2>
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/30/20210330/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-20210327_linux02" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-20210327_linux02" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
@@ -564,6 +172,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -571,16 +200,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/27/20210327_linux02/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/03/27/20210327_linux02/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2021/03/30/20210330/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/03/25/20210325_linux01/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -600,192 +297,14 @@
 
 
 
-
   
-    <article id="post-20210325_linux01" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="lamp架构"><a href="#lamp架构" class="headerlink" title="lamp架构"></a>lamp架构</h2><p>linux  apache mysql php</p>
-<h2 id="踩点网站"><a href="#踩点网站" class="headerlink" title="踩点网站"></a>踩点网站</h2><p><a target="_blank" rel="noopener" href="http://www.netcraft.com/">www.netcraft.com</a></p>
-<h3 id="建议使用vm8"><a href="#建议使用vm8" class="headerlink" title="建议使用vm8"></a>建议使用vm8</h3><h2 id="系统分区"><a href="#系统分区" class="headerlink" title="系统分区"></a>系统分区</h2><h3 id="2格式化"><a href="#2格式化" class="headerlink" title="2格式化"></a>2格式化</h3><h3 id="3硬件设备文件名"><a href="#3硬件设备文件名" class="headerlink" title="3硬件设备文件名"></a>3硬件设备文件名</h3><p>ide硬盘      /dev/hd[a-d]</p>
-<p>scsi/sata/usb硬盘    /dev/sd[a-p]</p>
-<p>光驱    /dev/cdrom或/dev/sr0</p>
-<p>软盘    /dev/fd[0-1]</p>
-<p>打印机（25针）   /dev/lp[0-2]</p>
-<p>打印机（usb）    /dev/usb/lp[0-15]</p>
-<p>鼠标     /dev/mouse</p>
-<h3 id="分区设备文件名"><a href="#分区设备文件名" class="headerlink" title="分区设备文件名"></a>分区设备文件名</h3><p>设备文件名 </p>
-<p>/dev/hda   ide硬盘接口</p>
-<p>/dev/sda1    scsi硬盘接口、sata硬盘接口</p>
-<h3 id="4挂载"><a href="#4挂载" class="headerlink" title="4挂载"></a>4挂载</h3><h4 id="必须分区"><a href="#必须分区" class="headerlink" title="必须分区"></a>必须分区</h4><p>/(根分区)</p>
-<p>swap分区(交换分区，内存2倍，一般不超过2gb)</p>
-<h4 id="推荐分区"><a href="#推荐分区" class="headerlink" title="推荐分区"></a>推荐分区</h4><p>/boot(启动分区，200mb)</p>
-<h3 id="文件系统结构"><a href="#文件系统结构" class="headerlink" title="文件系统结构"></a>文件系统结构</h3><p><img src="C:\Users\Administrator\Desktop\2021032501.png"></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/25/20210325_linux01/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-继承" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><p>类与类只能单继承</p>
-<h2 id="super"><a href="#super" class="headerlink" title="super"></a>super</h2><p>父类构造器只能写到最前面</p>
-<p>private static修饰方法不能被重写</p>
-<h2 id="final"><a href="#final" class="headerlink" title="final"></a>final</h2><p>final</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/12/%E7%BB%A7%E6%89%BF/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-我的第一篇博客文章" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2021/03/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">我的第一篇博客文章</a>
-    </h1>
   
 
-        
-        <a href="/2021/03/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/" class="archive-article-date">
-  	<time datetime="2021-03-09T15:14:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-03-09</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>##第一章</p>
-<p>内容</p>
-<hr>
-<p>##第二章</p>
-<p>内容</p>
-<hr>
-<p>##参考蚊香</p>
-<p><a target="_blank" rel="noopener" href="http://www.codesheep.cn/">www.codesheep.cn</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2021/03/09/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
+  
 
   
+
   
 
 
@@ -808,8 +327,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
